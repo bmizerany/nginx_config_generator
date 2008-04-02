@@ -18,7 +18,7 @@ events {
 http {
 	# pull in mime-types. You can break out your config 
 	# into as many include's as you want to make it cleaner
-	include       conf/mime.types;
+	include /etc/nginx/mime.types;
 
 	# set a default type for the rare situation that
 	# nothing matches from the mimie-type include
@@ -30,8 +30,8 @@ http {
                 		'"$http_user_agent" "http_x_forwarded_for"';
 
 	# main access log
-	access_log  logs/access.log  main;
-
+  access_log  /var/log/nginx/access.log;
+  
 	# main error log
 	error_log  logs/error.log debug;
 	#error_log logs/error.log debug_http;
