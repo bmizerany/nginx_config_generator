@@ -2,7 +2,7 @@
 # The name (or key) of your site will be sprintf'd with
 # the below root, right.
 root: 
-  default: /var/www/%s
+  default: /var/www/%s/current/public
 
 # All your vhosts.
 sites: 
