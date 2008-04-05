@@ -1,0 +1,13 @@
+# This defines the default roots and alternate roots.
+# The name (or key) of your site will be sprintf'd with
+# the below root, right.
+root: 
+  default: /var/www/%s
+
+# All your vhosts.
+sites: 
+  hummingbird:
+    upstream: 
+      - 127.0.0.1:8000
+      - 127.0.0.1:8001
+    server_name: badges.songbirdnest.com downloads.songbirdnest.com bundles.songbirdnest.com locales.songbirdnest.com firstrun.songbirdnest.com bookmarks.songbirdnest.com addon-files.songbirdnest.com
